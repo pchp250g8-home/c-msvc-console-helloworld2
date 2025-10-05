@@ -11,11 +11,11 @@ int main()
     system("cls");
     printf("Hello, World!!!\r\n");
     printf("Input your name:\r\n");
+    fflush(stdin);fflush(stdout);
     scanf_s("%[^\n]", &szName,80);
     printf("Hello, %s!!!\r\n",szName);
-    fflush(stdin);
-    fflush(stdout);
-    fgetc(stdin);
+    fflush(stdin);fflush(stdout);
+    fgetc(stdin); fgetc(stdin);
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
